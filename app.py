@@ -19,9 +19,6 @@ class ATM:
 
             while request > 0:
 
-
-
-
                 if request >= 100:
                     request -= 100
                     print("give 100")
