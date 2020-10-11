@@ -5,7 +5,7 @@ class ATM:
         self.bank_name = bank_name
 
     def withdraw(self, request):
-        print("current balance =" , self.balance, "your request =", request)
+        print("current balance =", self.balance, "your request =", request)
         result = self.balance
 
         if request > self.balance:
