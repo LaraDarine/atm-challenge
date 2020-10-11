@@ -3,7 +3,8 @@ class ATM:
     def __init__(self, balance, bank_name):
         self.balance = balance
         self.bank_name = bank_name
-
+        self.slices = ['100', '50', '10', '5']
+        
     def withdraw(self, request):
         print("current balance =", self.balance, "your request =", request)
         result = self.balance
@@ -42,13 +43,17 @@ class ATM:
             result = self.balance - request
 
         return result
+
+
 balance1 = 500
 balance2 = 1000
+
 
 atm1 = ATM(balance1, "Saba Bank")
 print("Welcome to Saba Bank")
 atm2 = ATM(balance2, "Jeen Bank")
 print("Welcome to Jeen Bank")
+
 
 atm1.withdraw(700)
 atm1.withdraw(421)
